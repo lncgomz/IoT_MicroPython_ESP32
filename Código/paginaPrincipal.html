@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title>Proyecto IoT MicroPython UdeA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        html {
+            font-family: Helvetica;
+            display: inline-block;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #01602D;
+            padding: 0;
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        a {
+            color: white;
+        }
+
+        .info {
+            background: #fffbce;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer {
+            background-color: #01602D;
+            position: fixed;
+            bottom: 0;
+            margin-bottom: 5px;
+            width: 100%;
+        }
+
+        .footerTextCenter {
+            text-align: center;
+            color: #ffffff
+        }
+
+        input[type='radio']:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: 0px;
+            left: -1px;
+            position: relative;
+            background-color: #d1d3d1;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid #01602D;
+        }
+
+        input[type='radio']:checked:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: 0px;
+            left: -1px;
+            position: relative;
+            background-color: #01602D;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"><img
+            src="https://www.pngfind.com/pngs/m/230-2301392_python-vector-head-white-python-logo-png-transparent.png"
+            alt="MicroPython" width="50" height="50">
+        <h1>Proyecto IoT MicroPython</h1>
+        <h1>UdeA</h1>
+        <div class="info">
+            <p>Introduzca el texto en el recuadro e indique si desea verlo convertido en <b>C&oacute;digo de Colores</b>
+                o en <b>C&oacute;digo Morse</b>
+                </br>para una mejor experiencia, se recomienda <u>utilizar s&oacute;lamente caracteres
+                    alfab&eacute;ticos, omitiendo
+                    acentos y la letra &Ntilde;</u></p>
+        </div>
+        <form name="myform" action="" method="GET">Escriba aqu&iacute; su mensaje:<br><input name="msg" name="msg"
+                VALUE="">
+            <P>
+            <div role="radiogroup"><input role="radio" type="radio" id="mode" name="mode" value="1" aria-checked="true"
+                    checked="checked"> Convertir a Colores<br><input role="radio" type="radio" id="mode" name="mode"
+                    value="0" aria-checked="false"> Convertir
+                a Morse<br></div><br><input type="submit" name="button" Value="Enviar">
+        </form>
+        <div class="container row footer footerText">
+            <div class="col-md-12 col-sm-12 col-lg-12 footerTextCenter"><u>Elaborado por:</u>
+                <a href="https://github.com/lncgomz">Leoncio G&oacute;mez - Diciembre 2020</a></div>
+        </div>
+</body>
+</html>
